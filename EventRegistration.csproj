@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04489DFC-0BD2-4DE1-B8FE-3621A932542E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EventRegistration</RootNamespace>
+    <AssemblyName>EventRegistration</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AuthorizeNet, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LouACH\LouACH\bin\AuthorizeNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Oracle Developer Tools for VS2013\odp.net\managed\common\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Oracle Developer Tools for VS2013\odp.net\managed\common\EF6\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LouACH\LouACH\bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AuthorizeNet.dll" />
+    <Content Include="bin\EventRegistration.dll" />
+    <Content Include="bin\EventRegistration.pdb" />
+    <Content Include="bin\LouACH.dll" />
+    <Content Include="bin\LouACH.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Oracle.ManagedDataAccess.dll" />
+    <Content Include="bin\Oracle.ManagedDataAccess.EntityFramework.dll" />
+    <Content Include="bin\SampleCode.exe" />
+    <Content Include="bin\SampleCode.vshost.exe" />
+    <Content Include="bio.html" />
+    <Content Include="club.html" />
+    <Content Include="dress.html" />
+    <Content Include="EventMakePayment.aspx" />
+    <Content Include="EventReceipt.aspx" />
+    <Content Include="EventReceiptNoCharge.aspx" />
+    <Content Include="EventRegistration.aspx" />
+    <Content Include="hotels.html" />
+    <Content Include="images\bonaventure.png" />
+    <Content Include="images\flourish.gif" />
+    <Content Include="images\flourish.png" />
+    <Content Include="images\hiltonCheckers.png" />
+    <Content Include="images\JonathanClub.jpg" />
+    <Content Include="images\LindgrenPhotos.png" />
+    <Content Include="images\marriott.png" />
+    <Content Include="images\millenium.png" />
+    <Content Include="images\ornament.png" />
+    <Content Include="images\RetirementDinnerHeader.png" />
+    <Content Include="images\RobertLindgren.jpg" />
+    <Content Include="images\scroll.png" />
+    <Content Include="images\Sheraton.png" />
+    <Content Include="index.html" />
+    <Content Include="LouACH.csproj" />
+    <Content Include="LouACH.csproj.user" />
+    <Content Include="Main.aspx" />
+    <Content Include="main.css" />
+    <Content Include="MembershipApp.aspx" />
+    <Content Include="obj\Debug\LouACH.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\LouACH.dll" />
+    <Content Include="obj\Debug\LouACH.pdb" />
+    <Content Include="obj\Debug\SampleCode.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\SampleCode.exe" />
+    <Content Include="obj\Debug\SampleCode.pdb" />
+    <Content Include="packages\AuthorizeNet.1.9.1\lib\AuthorizeNet.dll" />
+    <Content Include="packages\AuthorizeNet.1.9.1\lib\AuthorizeNet.xml" />
+    <Content Include="RegistrationPay.aspx" />
+    <Content Include="retirement.css" />
+    <Content Include="StyleSheetMIN.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="CustomerProfiles\CreateCustomerPaymentProfile.cs" />
+    <Compile Include="CustomerProfiles\CreateCustomerProfile.cs" />
+    <Compile Include="CustomerProfiles\CreateCustomerProfileFromTransaction.cs" />
+    <Compile Include="CustomerProfiles\CreateCustomerShippingAddress.cs" />
+    <Compile Include="CustomerProfiles\DeleteCustomerPaymentProfile.cs" />
+    <Compile Include="CustomerProfiles\DeleteCustomerProfile.cs" />
+    <Compile Include="CustomerProfiles\DeleteCustomerShippingAddress.cs" />
+    <Compile Include="CustomerProfiles\GetAcceptCustomerProfilePage.cs" />
+    <Compile Include="CustomerProfiles\GetCustomerPaymentProfile.cs" />
+    <Compile Include="CustomerProfiles\GetCustomerPaymentProfileList.cs" />
+    <Compile Include="CustomerProfiles\GetCustomerProfile.cs" />
+    <Compile Include="CustomerProfiles\GetCustomerProfileIds.cs" />
+    <Compile Include="CustomerProfiles\GetCustomerShippingAddress.cs" />
+    <Compile Include="CustomerProfiles\UpdateCustomerPaymentProfile.cs" />
+    <Compile Include="CustomerProfiles\UpdateCustomerProfile.cs" />
+    <Compile Include="CustomerProfiles\UpdateCustomerShippingAddress.cs" />
+    <Compile Include="CustomerProfiles\ValidateCustomerPaymentProfile.cs" />
+    <Compile Include="EventMakePayment.aspx.cs">
+      <DependentUpon>EventMakePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventMakePayment.aspx.designer.cs">
+      <DependentUpon>EventMakePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventReceipt.aspx.cs">
+      <DependentUpon>EventReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventReceipt.aspx.designer.cs">
+      <DependentUpon>EventReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventReceiptNoCharge.aspx.cs">
+      <DependentUpon>EventReceiptNoCharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventReceiptNoCharge.aspx.designer.cs">
+      <DependentUpon>EventReceiptNoCharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventRegistration.aspx.cs">
+      <DependentUpon>EventRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventRegistration.aspx.designer.cs">
+      <DependentUpon>EventRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events\CardConnectRestClient.cs" />
+    <Compile Include="Events\Company.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="Events\EventTransaction.cs" />
+    <Compile Include="Events\Person.cs" />
+    <Compile Include="Events\Registration.cs" />
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipApp.aspx.cs">
+      <DependentUpon>MembershipApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MembershipApp.aspx.designer.cs">
+      <DependentUpon>MembershipApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PaymentTransactions\AuthorizeCreditCard.cs" />
+    <Compile Include="PaymentTransactions\CaptureFundsAuthorizedThroughAnotherChannel.cs" />
+    <Compile Include="PaymentTransactions\CapturePreviouslyAuthorizedAmount.cs" />
+    <Compile Include="PaymentTransactions\CardConnectAPI.cs" />
+    <Compile Include="PaymentTransactions\CardConnectCCAuth.cs" />
+    <Compile Include="PaymentTransactions\CardConnectRestClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PaymentTransactions\CardConnectRestClientExample.cs" />
+    <Compile Include="PaymentTransactions\ChargeCreditCard.cs" />
+    <Compile Include="PaymentTransactions\ChargeCustomerProfile.cs" />
+    <Compile Include="PaymentTransactions\ChargeEncryptedTrackData.cs" />
+    <Compile Include="PaymentTransactions\ChargeTokenizedCreditCard.cs" />
+    <Compile Include="PaymentTransactions\ChargeTrackData.cs" />
+    <Compile Include="PaymentTransactions\Constants.cs" />
+    <Compile Include="PaymentTransactions\CreditBankAccount.cs" />
+    <Compile Include="PaymentTransactions\DataBase.cs" />
+    <Compile Include="PaymentTransactions\DebitBankAccount.cs" />
+    <Compile Include="PaymentTransactions\GetHostedPaymentPage.cs" />
+    <Compile Include="PaymentTransactions\RefundTransaction.cs" />
+    <Compile Include="PaymentTransactions\UpdateSplitTenderGroup.cs" />
+    <Compile Include="PaymentTransactions\VoidTransaction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationPay.aspx.cs">
+      <DependentUpon>RegistrationPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationPay.aspx.designer.cs">
+      <DependentUpon>RegistrationPay.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="bin\LouACH.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\LouACH.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\SampleCode.csprojResolveAssemblyReference.cache" />
+    <Content Include="packages.config" />
+    <Content Include="packages\AuthorizeNet.1.9.1\AuthorizeNet.1.9.1.nupkg" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56223</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56223/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
