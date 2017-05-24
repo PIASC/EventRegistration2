@@ -401,7 +401,7 @@ namespace LouACH
                 JObject request = new JObject();
                 // Merchant ID
                 request.Add("merchid", merchID);  //  496226287886   496160873888  496400000840                // Card Type
-                request.Add("accttype", "VI");
+                //request.Add("accttype", "VI");
                 // Card Number
                 request.Add("account", creditCard.cardNumber);
                 // Card Expiry
