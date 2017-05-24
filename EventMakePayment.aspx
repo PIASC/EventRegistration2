@@ -1,30 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EventMakePayment.aspx.cs" Inherits="LouACH.EventMakePayment" %>
-<!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="">
-<!--<![endif]-->
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EventMakePayment.aspx.cs" Inherits="LouACH.EventMakePayment" %>
+<<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PIASC's mission is simply to do everything possible to help our members succeed." />
-
-<title>The Bob Lindgren Retirement Dinner</title>
-<link href="../css/boilerplate.css" rel="stylesheet" type="text/css">
-<link href="retirement.css" rel="stylesheet" type="text/css">
-
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
- <script> (function (d) {
-     var config = {
-         kitId: 'aem6egb',
-         scriptTimeout: 3000
-     },
-     h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = '//use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
- })(document);
-</script>
+  <meta content="text/html; charset=ISO-8859-1"  http-equiv="content-type"/>
+<title></title>
 <script src="../js/respond.min.js"></script>
 <script type="text/javascript">
     function GoToNext() {
@@ -81,28 +61,7 @@
         spinner.style.display = "block";
     }
 </script>
-    <style>
-        .loader {
-          border: 16px solid #f3f3f3;
-          border-radius: 50%;
-          border-top: 16px solid blue;
-          border-bottom: 16px solid blue;
-          width: 30px;
-          height: 30px;
-          -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-        }
-
-        @-webkit-keyframes spin {
-          0% { -webkit-transform: rotate(0deg); }
-          100% { -webkit-transform: rotate(360deg); }
-        }
-
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-</style>
+ 
 </head>
 <body>
     <form id="fPayment" runat="server">
@@ -151,7 +110,7 @@
     <div id="centered">
 <div class="fluid" >
 <p><strong>PAYMENT PAGE</strong></p>
-    <%--<%=sOutput %>--%>
+
         <div class="box2">
         <p><label for="txtAmount">Amount Due:</label><input class="TxtArea" name="txtAmount" id="txtAmount" ="10" value="<%=sAmountDue %>"/><br/><br/>
         <label for="txtCoName">&nbsp;&nbsp;&nbsp;&nbsp;Name:</label><input class="TxtArea" name="txtFName" value="<%=fName %>" style="width:220px" placeholder="First Name"/><input class="TxtArea" name="txtLName" value="<%=lName %>" style="width:220px"  placeholder="Last Name"/><br/>
@@ -161,22 +120,13 @@
         <label for="txtZip">Zip:</label><input class="TxtArea" name="txtZip"  id="txtZip" value="" style="width:100px"/><br /><br />
         <label for="txtCC">Card Number:</label><input class="TxtArea" name="txtCC"  id="txtCC" value="4111111111111111"  style="width:250px"/><br />
         <label for="txtExpDt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expiration:</label><input class="TxtArea" name="txtExpDt"  id="txtExpDt" value=""  style="width:75px"  placeholder="  mmyy"/><label for="txtSecNo"> Security Code:</label><input class="TxtArea" name="txtSecNo"  id="txtSecNo" value="" style="width:75px"/><br />
-        <br /><br />
-            <input type="hidden" id="GuestName"  name="GuestName" value="<%=gName%>" /><input type="hidden" id="GuestMeal"  name="GuestMeal" value="<%=gMeal%>" /><input type="hidden" id="Meal"  name="Meal" value="<%=Meal%>"/>
-            <input type="hidden" id="PIASC"  name="PIASC" value="<%=PIASC%>" /><input type="hidden" id="IPM"  name="IPM" value="<%=IPM%>" /><input type="hidden" id="PPAC"  name="PPAC" value="<%=PPAC%>" />
             <input id="ButtonPay" type="button" value="Make Payment" class="button" onclick="GoToNext()" /><div class="loader" id="spinner"  style="display: none"></div>
              
           </div>  
           
 
      </div></div><br /><br /></section>
-<div id="subFooter" class="fluid"><p>Bob Lindgren Retirement Dinner | Jonathan Club  | 545 S. Figueroa Street, Los Angeles, CA 90071 | 323.728.9500, Ext. 229</p></div>
-    </form>
-<script src="../js/vendor/jquery-1.11.1.min.js"></script>
-<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
-<script src="../js/plugins.js"></script>
-<script src="../js/main.js"></script>
-
+        </form>
 </body>
-</html>
 
+</html>
